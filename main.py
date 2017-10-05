@@ -31,12 +31,3 @@ def decrypt(num_list, encrypt_key):
         num_list[count] = n // int(encrypt_key[count])
     return num_list
 
-key = "23749827349872398472934729384729834728937498283749823478274"
-a = char_to_num("hi my name is henry")
-print(a)
-b = encrypt(a, key)
-print(b)
-c = decrypt(b, key)
-print(c)
-d = num_to_char(c)
-print(d)
