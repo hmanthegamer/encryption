@@ -12,6 +12,7 @@ def save_numbers(num_list, filename):
     file = open(file_extention(filename), "w")
     for n in num_list:
         file.write(str(n) + "\n")
+
 def load_text(filename):
     file = open(file_extention(filename), "r")
     return file.readline()
