@@ -1,9 +1,9 @@
 import convert
 
-def encrypt_1(text):
+def encrypt_1(text, encrypt_key_short):
     num_list = convert.char_to_num(text)
-    encrypt_key_short = input("Enter a encryption key(make it long):\n")
     encrypt_key = encrypt_key_short
+    
     while len(encrypt_key) < len(num_list):
         encrypt_key += encrypt_key
     
